@@ -1,3 +1,4 @@
+###Transcriptomic data obtained from the GDC portal is used. The rows are gene names and the columns are samples with cells being TPM values.### 
 dat1 <- read.csv("tumor_tpm.csv")
 rownames(dat1) <- dat1[,1]
 dat1 <- dat1[,-1]
