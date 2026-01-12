@@ -1,3 +1,6 @@
+##The "gdc_472_HNSC.txt" is a list of the names of the individual directories of each of the samples. Within each directory of the sample, there exsists a subdirectory within which are present
+##a .tsv file which contain the transcriptomic data of that sample. These .tsv files for all the samples are collated into a single file to obtain the gene*sample matrix with values being TPM##
+
 gdc <- readLines("gdc_472_HNSC.txt")
 gdc <- gdc[-c(473:474)]
 gdc_sample <- matrix(gdc, nrow = length(gdc), ncol =2)
